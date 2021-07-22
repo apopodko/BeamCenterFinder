@@ -15,5 +15,3 @@ On Truebeam platform machine to obtain DICOM images from portal imager you need 
 There are 2 files with script, one is for image processing and other is just a GUI. Also there is an exe file for those who don't want to install the python or have any other reason. Libraries dependencies: numpy, scipy, cv2, pydicom, tkinter.
 
 After running the script choose a folder with 4 dicom images and press analyze. There is no need to specially name the files or anything else, at least for Varian Truebeam platform machines. Files are distinguished automatically by the jaws position, as their X coordinate will be larger for MLC plan than for a jaws-only plan. Resize factor for bicubic interpolation should be taken carefully because of the memory overflow.
-
-<meta name="google-site-verification" content="qI6xJQcvhL-RTbhEOwlpai4jJIu0shVAf6rZU56H7u8" />
