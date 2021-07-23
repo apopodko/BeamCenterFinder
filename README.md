@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="qI6xJQcvhL-RTbhEOwlpai4jJIu0shVAf6rZU56H7u8" />
 BeamCenterFinder is a script based on the article "Beam focal spot position: The forgotten linac QA parameter. An EPID-based phantomless method for routine Stereotactic linac QA" by Jacek M. Chojnowski et al. DOI: 10.1002/acm2.12147. The idea is to find the actual position of the beam focal spot using different distances from target of X, Y jaws and MLC.
  
 These distances were taken from the paper. Also, to obtain the values of distances to MLC and jaws you could go to beam configuration in your eclipse system. Open beam parameters and there you might find the values of distance of top and bottom surfaces from target so you can find the distance of middle of the jaw from target.
