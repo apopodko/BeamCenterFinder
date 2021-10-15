@@ -1,14 +1,14 @@
-BeamCenterFinder is a script based on the article "Beam focal spot position: The forgotten linac QA parameter. An EPID-based phantomless method for routine Stereotactic linac QA" by Jacek M. Chojnowski et al. DOI: 10.1002/acm2.12147. The idea is to find the actual position of the beam focal spot using different distances from target of X, Y jaws and MLC.
+BeamCenterFinder is a script based on the article "Beam focal spot position: The forgotten linac QA parameter. An EPID-based phantomless method for routine Stereotactic linac QA" by Jacek M. Chojnowski et al. DOI: 10.1002/acm2.12147. The idea is to find the actual position of the beam focal spot using different distances from target of X, Y jaws and MLC with two opposite collimator rotations (90 and 270 degrees for example).
  
 These distances were taken from the paper. Also, to obtain the values of distances to MLC and jaws you could go to beam configuration in your eclipse system. Open beam parameters and there you might find the values of distance of top and bottom surfaces from target so you can find the distance of middle of the jaw from target.
 
 ![Open beam parameters](https://user-images.githubusercontent.com/81773641/113697626-1e48ef80-96dc-11eb-96f4-4b852811c071.PNG)
 
-All the measurements could be performed in Service Dosimetry mode for beam alignment. To do that go to the XI tab, MV, Dosimetry. For MLC images you need to create a plan in Eclipse and export it to the folder on your dcf server. 
+All the measurements could be performed in Service Dosimetry mode for beam alignment. To do that go to the XI tab, MV, Dosimetry. For MLC images you need to create a plan in Eclipse and export it to the folder on your dcf server. There is no certain field size for this script, except it must be the same for Jaw and MLC shaped fields (we used 10x10).
 
 ![XI Tab](https://user-images.githubusercontent.com/81773641/113697667-2f91fc00-96dc-11eb-9a5e-cb6513034e7d.png)
 
-On Truebeam platform machine to obtain DICOM images from portal imager you need to go to XI tab in Service mode. On the second screen choose 4 filmed images for each session with SHIFT and export them to flash drive or any other way you like. You can put any filename, but choose the DICOM file format before exporting.
+On Truebeam platform machine to obtain DICOM images from portal imager you need to go to XI tab in Service mode. On the second screen choose 4 filmed images for each session using SHIFT key and export them to flash drive or any other way you like. You can put any filename, but choose the DICOM file format before exporting.
 
 ![Service mode export images](https://user-images.githubusercontent.com/81773641/113697689-34ef4680-96dc-11eb-99d9-321353683f81.png)
 
